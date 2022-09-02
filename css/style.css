@@ -38,15 +38,8 @@ body {
   color: var(--SoftBlue);
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 30%;
-  height: auto;
-}
-
 .card {
+  margin: auto;
   border-radius: 20px;
   background-color: var(--CardBG);
   overflow: hidden;
@@ -61,14 +54,15 @@ body {
 }
 
 .overlay {
+  display: block;
   position: absolute;
   top: 0;
   left: 0;
+  bottom: 0;
+  right: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 98.5%;
   background-color: rgba(0, 255, 247, 0.5);
   border-radius: 10px;
   opacity: 0;
@@ -81,7 +75,6 @@ body {
 }
 
 .equilibrium {
-  width: 100%;
   border-radius: 10px;
 }
 
